@@ -12,13 +12,17 @@
 #define L_BLUETOOTH 1
 
 / {
-		combo_to_bluetooth_layer {
-            timeout-ms = <50>;
-            require-prior-idle-ms = <500>;
-            key-positions = <1 2 3>;
-            bindings = <&to L_BLUETOOTH>;
-			layers = <L_BASE>;
-        };
+		combos {
+			compatible = "zmk,combos";
+		
+			combo_to_bluetooth_layer {
+				timeout-ms = <50>;
+				require-prior-idle-ms = <500>;
+				key-positions = <1 2 3>;
+				bindings = <&to L_BLUETOOTH>;
+				layers = <L_BASE>;
+			};
+		};
 		
         keymap {
             compatible = "zmk,keymap";
