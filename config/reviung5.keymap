@@ -30,7 +30,7 @@
             layer_base {
               bindings = <
                 // ╭───────┬─────────┬───────┬───────────┬───────╮
-                     &kp R   &kp LEFT  &kp E   &kp RIGHT   &kp G
+                     &kp T   &kp LEFT  &kp E   &kp RIGHT   &kp R
                 // ╰───────┴─────────┴───────┴───────────┴───────╯
               >;
               sensor-bindings = <&inc_dec_kp B K>;
